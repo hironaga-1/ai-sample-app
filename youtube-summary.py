@@ -29,8 +29,7 @@ def select_model():
     
     # 300: 本文以外の指示のtoken数 (以下同じ)
     st.session_state.max_token = OpenAI.modelname_to_contextsize(st.session_state.model_name) - 300
-    return ChatOpenAI(openai_api_key='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',
-                      temperature=0, 
+    return ChatOpenAI(temperature=0, 
                       model_name=st.session_state.model_name)
 
 

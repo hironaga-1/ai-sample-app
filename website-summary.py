@@ -31,8 +31,7 @@ def select_model():
     else:
         model_name = "gpt-4"
 
-    return ChatOpenAI(openai_api_key='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',
-                      model_name=model_name,
+    return ChatOpenAI(model_name=model_name,
                       streaming=True)
 
 def get_url_input():
